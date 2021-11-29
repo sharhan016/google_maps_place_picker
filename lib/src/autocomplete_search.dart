@@ -17,7 +17,7 @@ class AutoCompleteSearch extends StatefulWidget {
       required this.onPicked,
       required this.appBarKey,
       this.hintText,
-      this.searchingText = "Searching...",
+      this.searchingText = "Searching Places...",
       this.height = 40,
       this.contentPadding = EdgeInsets.zero,
       this.debounceMilliseconds,
@@ -256,7 +256,7 @@ class AutoCompleteSearchState extends State<AutoCompleteSearch> {
           SizedBox(width: 24),
           Expanded(
             child: Text(
-              widget.searchingText ?? "Searching...",
+              widget.searchingText ?? "Searching Places...",
               style: TextStyle(fontSize: 16),
             ),
           )
